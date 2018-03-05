@@ -1,0 +1,306 @@
+/*html::-webkit-scrollbar {*/
+    /*display: none;*/
+/*}*/
+/*轮播*/
+.carousel-control.right ,.carousel-control.left{
+    background: none;
+}
+.carousel-control{
+    opacity: 0;
+    font-size:120px;
+    width:80px;
+}
+#myCarousel .btn-zx{
+    font-size:24px;
+    display: block;
+    width:120px;
+    line-height: 36px;
+    background-color: white;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 10;
+    left:50%;
+    bottom:25%;
+    margin-left:-60px;
+    text-align: center;
+    color:#424242;
+    font-weight: normal;
+}
+/*在线课堂简介*/
+.online{
+    width:1000px;
+    margin:20px auto;
+    text-align: center;
+}
+.online-main{
+    height:400px;
+    background: url("../HMimages/computer.jpg") no-repeat bottom center;
+    background-size: 360px;
+}
+.online-txt{
+    display: block;
+    width:320px;
+    margin:30px auto 0;
+}
+.online-txt li{
+    display: block;
+    width:80px;
+    position: relative;
+}
+.online-txt li img{
+    max-width: 100%;
+    position: absolute;
+    width:60px;
+    top: 0;
+    left: 0;
+}
+.add_transform{
+    animation:myrotate 0.2s;
+    -moz-animation:myrotate 0.2s;
+    -webkit-animation:myrotate 0.2s;
+    -o-animation:myrotate 0.2s;
+}
+@keyframes myrotate {
+    0%{transform:rotate(30deg);
+         -ms-transform:rotate(30deg);    /* IE 9 */
+         -moz-transform:rotate(30deg);   /* Firefox */
+         -webkit-transform:rotate(30deg); /* Safari 和 Chrome */
+         -o-transform:rotate(30deg); }
+    25%{
+        transform:rotate(0deg);
+        -ms-transform:rotate(0deg);    /* IE 9 */
+        -moz-transform:rotate(0deg);   /* Firefox */
+        -webkit-transform:rotate(0deg); /* Safari 和 Chrome */
+        -o-transform:rotate(0deg);
+    }
+    50%{transform:rotate(30deg);
+        -ms-transform:rotate(30deg);    /* IE 9 */
+        -moz-transform:rotate(30deg);   /* Firefox */
+        -webkit-transform:rotate(30deg); /* Safari 和 Chrome */
+        -o-transform:rotate(30deg); }
+    75%{
+        transform:rotate(0deg);
+        -ms-transform:rotate(0deg);    /* IE 9 */
+        -moz-transform:rotate(0deg);   /* Firefox */
+        -webkit-transform:rotate(0deg); /* Safari 和 Chrome */
+        -o-transform:rotate(0deg);
+    }
+    100%{transform:rotate(30deg);
+        -ms-transform:rotate(30deg);    /* IE 9 */
+        -moz-transform:rotate(30deg);   /* Firefox */
+        -webkit-transform:rotate(30deg); /* Safari 和 Chrome */
+        -o-transform:rotate(30deg); }
+}
+@-webkit-keyframes myrotate {
+    0%{transform:rotate(30deg);
+        -ms-transform:rotate(30deg);    /* IE 9 */
+        -moz-transform:rotate(30deg);   /* Firefox */
+        -webkit-transform:rotate(30deg); /* Safari 和 Chrome */
+        -o-transform:rotate(30deg); }
+    25%{
+        transform:rotate(0deg);
+        -ms-transform:rotate(0deg);    /* IE 9 */
+        -moz-transform:rotate(0deg);   /* Firefox */
+        -webkit-transform:rotate(0deg); /* Safari 和 Chrome */
+        -o-transform:rotate(0deg);
+    }
+    50%{transform:rotate(30deg);
+        -ms-transform:rotate(30deg);    /* IE 9 */
+        -moz-transform:rotate(30deg);   /* Firefox */
+        -webkit-transform:rotate(30deg); /* Safari 和 Chrome */
+        -o-transform:rotate(30deg); }
+    75%{
+        transform:rotate(0deg);
+        -ms-transform:rotate(0deg);    /* IE 9 */
+        -moz-transform:rotate(0deg);   /* Firefox */
+        -webkit-transform:rotate(0deg); /* Safari 和 Chrome */
+        -o-transform:rotate(0deg);
+    }
+    100%{transform:rotate(30deg);
+        -ms-transform:rotate(30deg);    /* IE 9 */
+        -moz-transform:rotate(30deg);   /* Firefox */
+        -webkit-transform:rotate(30deg); /* Safari 和 Chrome */
+        -o-transform:rotate(30deg); }
+}
+.online-txt .fir{
+    float: left;
+    text-align: left;
+}
+.online-txt .sec{
+    float: right;
+    text-align: right;
+}
+/*在线试听*/
+.appoint{
+    width:100%;
+    text-align: center;
+    font-size:18px;
+    color:#323232;
+    line-height: 60px;
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+}
+
+/*课程介绍部分*/
+.course-box{
+    width:1000px;
+    margin:0 auto;
+    text-align: center;
+    padding-top:10px;
+}
+.tab-con .tab-tit{
+    display: block;
+    overflow: hidden;
+    text-align: center;
+}
+.tab-tit li{
+    display: inline-block;
+    padding:0 5px;
+    margin:0 10px;
+    font-size:14px;
+    color:#323232;
+    cursor: pointer;
+}
+.tab-tit li.cur{
+    color:red;
+}
+.tab-con .tab-main{
+    width: 800px;
+    margin:10px auto;
+}
+
+.tab-main .tab-item{
+    display:none;
+}
+.tab-main .tab-item li{
+    display: block;
+}
+.course-box .link-m{
+    font-size:14px;
+    display: block;
+    padding:10px;
+    border:1px solid #ccc;
+    width:400px;
+    text-align: center;
+    margin:0 auto;
+}
+/*国际课程板块*/
+.inter-bk{
+    height:400px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    margin-top:40px;
+}
+#chartmain{
+    width:800px;
+    height:460px;
+    margin:0 auto;
+}
+
+
+/*老师介绍*/
+.teacher-box{
+    width:1000px;
+    margin:0 auto;
+    text-align: center;
+}
+.tea-intro{
+    height:150px;
+    position: relative;
+}
+.tea-intro .intro-item{
+    position: relative;
+    width:150px;
+    float: left;
+    height:150px;
+    top:0;
+}
+.tea-intro .intro-item.fir{
+    background-color: red;
+    left:0;
+}
+.tea-intro .intro-item.sec{
+    background-color:#0E2D5F;
+    left:-40px;
+}
+.tea-intro .intro-item.thr{
+    background-color:#3ccb93;
+    left:-80px;
+}
+.tea-intro .intro-item.four{
+    background-color: #00ee00;
+    left:-120px;
+}
+.tea-intro .intro-item.five{
+    background-color: #2e6da4;
+    left:-160px;
+}
+.tea-intro .intro-det{
+    width:150px;
+    height:150px;
+    background-color: #ccc;
+    position: absolute;
+    left:150px;
+    top:0;
+    display: none;
+}
+/*战绩榜*/
+.record-zj{
+    width: 1000px;
+    margin:0 auto;
+    text-align: center;
+    height: 400px;
+}
+.tab-b{
+    display: none;
+}
+.tab-tab .tab-t{
+    display: block;
+    overflow: hidden;
+    width:200px;
+    margin:0 auto;
+}
+.tab-tab .tab-t li{
+    display: block;
+    cursor: pointer;
+}
+.tab-tab .tab-t li.fir{
+    float: left;
+}
+.tab-tab .tab-t li.sec{
+    float: right;
+}
+.tab-t .cur{
+    color: red;
+}
+.tab-b table{
+    display: block;
+    width:800px;
+    margin:20px auto;
+}
+.tab-b table th{
+    width:400px;
+    text-align: center;
+}
+.tab-b table th:first-child ,.tab-b table th:last-child{
+    text-align: center;
+    width:200px;
+}
+tfoot{
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+}
+table tr{
+    border-top:1px solid #ccc;
+}
+table td ,table thead th{
+    border-right: 1px solid #ccc;
+}
+table td:first-child{
+    border-left:1px solid #ccc ;
+}
+table thead{
+    border-left:1px solid #ccc ;
+}
