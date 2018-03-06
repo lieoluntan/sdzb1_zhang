@@ -3,17 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>首页</title>
-    <script type="text/javascript" src="/sdzb_ajax/easyui_xpp/jquery-easyui-136/jquery.min.js"></script>
-    <script src="/sdzb_ajax/xppjs/jquery.idTabs.js"></script>
-    <script type="text/javascript" src="/sdzb_ajax/easyui_xpp/jquery-easyui-136/locale/easyui-lang-zh_CN.js"></script>
-    <script type="text/javascript" src="/sdzb_ajax/easyui_xpp/DataTables/datatables.js"></script>
-    <link href="/sdzb_ajax/js/bootstrap.min.css" rel="stylesheet">
-    <script src="/sdzb_ajax/js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="/sdzb_ajax/HMcode_QD/HMjs/echarts.min.js"></script>
-    <script src="/sdzb_ajax/HMcode_QD/HMjs/wow.min.js"></script>
-    <link href="/sdzb_ajax/HMcode_QD/HMcss/animate.min.css" rel="stylesheet">
-    <link href="/sdzb_ajax/HMcode_QD/HMcss/main.css" rel="stylesheet">
-    <link href="/sdzb_ajax/HMcode_QD/HMcss/ZB_1a0.css" rel="stylesheet">
+    <script type="text/javascript" src="/sdzb1_zhang/easyui_xpp/jquery-easyui-136/jquery.min.js"></script>
+    <link href="/sdzb1_zhang/js/bootstrap.min.css" rel="stylesheet">
+    <script src="/sdzb1_zhang/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/sdzb1_zhang/HMcode_QD/HMjs/jump.js" type="text/javascript"></script>
+    <script src="/sdzb1_zhang/HMcode_QD/HMjs/wow.min.js"></script>
+    <link href="/sdzb1_zhang/HMcode_QD/HMcss/animate.min.css" rel="stylesheet">
+    <link href="/sdzb1_zhang/HMcode_QD/HMcss/main.css" rel="stylesheet">
+    <link href="/sdzb1_zhang/HMcode_QD/HMcss/ZB_1a0.css" rel="stylesheet">
     <script>
         $(window).load(function(){
             $('#myCarousel').addClass("fadeInRight");
@@ -62,34 +59,32 @@
     <!-- 轮播（Carousel）项目 -->
     <div class="carousel-inner">
         <div class="item active">
-            <img src="/sdzb_ajax/sdzbjpg/slide01.jpg" alt="First slide">
+            <img src="/sdzb1_zhang/sdzbjpg/slide01.jpg" alt="First slide">
         </div>
         <div class="item">
-            <img src="/sdzb_ajax/sdzbjpg/slide02.jpg" alt="Second slide">
+            <img src="/sdzb1_zhang/sdzbjpg/slide02.jpg" alt="Second slide">
         </div>
         <div class="item">
-            <img src="/sdzb_ajax/sdzbjpg/slide03.jpg" alt="Third slide">
+            <img src="/sdzb1_zhang/sdzbjpg/slide03.jpg" alt="Third slide">
         </div>
     </div>
     <!-- 轮播（Carousel）导航 -->
-    <a class="carousel-control left" href="#myCarousel"
-       data-slide="prev">&lsaquo;</a>
-    <a class="carousel-control right" href="#myCarousel"
-       data-slide="next">&rsaquo;</a>
+    <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+    <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
 </div>
 <!--E--轮播-->
 <!--S--在线课堂简介-->
 <div class="animated online">
     <h2>树袋在线课堂</h2>
     <p>— 释放效率  高效学习 —</p>
-    <div class="online-main">
-        <ul class="online-txt">
+    <div class="online-main img_box">
+        <ul class="online-txt" id="ul">
             <li class="fir">
-                <img class="img-dd" src="/sdzb_ajax/HMcode_QD/HMimages/img-bq.png">
+                <img class="img-dd" src="/sdzb1_zhang/HMcode_QD/HMimages/img-bq.png">
                 <p>这里是文字效果展示</p>
             </li>
             <li class="sec">
-                <img class="img-dd" src="/sdzb_ajax/HMcode_QD/HMimages/img-bq.png">
+                <img class="img-dd" src="/sdzb1_zhang/HMcode_QD/HMimages/img-bq.png">
                 <p>这里是文字效果展示</p>
             </li>
         </ul>
@@ -177,32 +172,32 @@
     <p>— 好成绩，从选择好老师开始 —</p>
     <div class="tea-intro">
         <div class="intro-item fir">
-            <div class="intro-tit">这里是图片介绍1</div>
-            <div class="intro-det">
+            <div class="intro-tit fold">这里是图片介绍1</div>
+            <div class="intro-det unfold">
                 <p>这里是一些文字介绍</p>
             </div>
         </div>
         <div class="intro-item sec">
-            <div class="intro-tit">这里是图片介绍2</div>
-            <div class="intro-det">
+            <div class="intro-tit fold">这里是图片介绍2</div>
+            <div class="intro-det unfold">
                 <p>这里是一些文字介绍</p>
             </div>
         </div>
         <div class="intro-item thr">
-            <div class="intro-tit">这里是图片介绍3</div>
-            <div class="intro-det">
+            <div class="intro-tit fold">这里是图片介绍3</div>
+            <div class="intro-det unfold">
                 <p>这里是一些文字介绍</p>
             </div>
         </div>
         <div class="intro-item four">
-            <div class="intro-tit">这里是图片介绍4</div>
-            <div class="intro-det">
+            <div class="intro-tit fold">这里是图片介绍4</div>
+            <div class="intro-det unfold">
                 <p>这里是一些文字介绍</p>
             </div>
         </div>
         <div class="intro-item five">
-            <div class="intro-tit">这里是图片介绍5</div>
-            <div class="intro-det" style="display: block">
+            <div class="intro-tit fold" style="display: none">这里是图片介绍5</div>
+            <div class="intro-det unfold" style="display: block">
                 <p>这里是一些文字介绍</p>
             </div>
         </div>
@@ -302,9 +297,16 @@
         $('.carousel').carousel({
             interval: 2000
         });
+        $(function(){
+            $("#ul img").each(function(k,img){
+                new JumpObj(img,10);
+                //第一个参数代表元素对象
+                //第二个参数代表抖动幅度
+            });
+        });
         /*课程体系tab切换*/
         $('.tab-tit li').hover(function(){
-            var divC = $('.tab-all .tab-item');
+            var divC = $('.tab-main .tab-item');
             var liC = $('.tab-tit li');
             var eqC = $(this).index();
             divC.css("display","none");
@@ -323,34 +325,36 @@
             divC.eq(eqC).css("display","block");
         });
         /*老师样式切换*/
-        $('.tea-intro .intro-item').click(function(){
+        /*$('.tea-intro .intro-item').click(function(){
             $('.intro-item .intro-det').css("display","none");
             $(this).find(".intro-det").css("display","block");
             $('.tea-intro .intro-item').animate({"marginRight":"0"},0.5);
             $(this).animate({"marginRight":"190px"},0.5);
-        });
+        });*/
+          /*  $(".tea-intro .intro-item").each(function(){
+                var fold = $(this).find(".fold");
+                var unfold = $(this).find(".unfold");
+                if(fold.is(":hidden")){
+                    $(this).width(150);
+                }else{
+                    $(this).width(150);
+                }
+            });*/
+            $(".tea-intro .intro-item").mouseover(function(){
+                var li_index = $(this).index();
+                    $(this).animate({width:150},0);
+                    $(this).find(".unfold").show();
+                    $(this).find(".fold").hide();
+                    $(this).siblings().animate({width:150},0);
+                    $(this).siblings().find(".unfold").hide();
+                    $(this).siblings().find(".fold").show();
+            });
         /*课堂简介图片抖动效果*/
-        $(".online-txt li").hover(function(){
-            $(this).find(".img-dd").addClass("add_transform");
-        },function () {
-            $(this).find(".img-dd").removeClass("add_transform");
-        });
+//        $(".online-txt li").hover(function(){
+//            $(this).find(".img-dd").addClass("add_transform");
+//        },function () {
+//            $(this).find(".img-dd").removeClass("add_transform");
+//        });
     });
 
-</script>
-<script>
-    $(document).ready(function () {
-        $(window).scroll(function() {
-            if ($(this).scrollTop() > 100) {
-                $('.back-to-top').fadeIn('slow');
-            } else {
-                $('.back-to-top').fadeOut('slow');
-            }
-        });
-        $('.back-to-top').click(function(){
-            $('html, body').animate({scrollTop : 0},1500, 'easeInOutExpo');
-            return false;
-        });
-        new WOW().init();
-    });
 </script>
