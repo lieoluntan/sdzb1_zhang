@@ -49,7 +49,8 @@
       var ana = (browser+"").replace(/[^a-z]/ig,"");
       if(ana=='msie'&&Number(an)<10){
         alert("您的浏览器版本过低，请下载IE10及以上版本");
-        window.stop ? window.stop() : document.execCommand("Stop");
+        //禁止加载
+//        window.stop ? window.stop() : document.execCommand("Stop");
       }
     </script>
     <!-- idTabs链接文件 -->
