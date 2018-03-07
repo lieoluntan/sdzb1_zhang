@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <title>首页</title>
     <script type="text/javascript" src="/sdzb1_zhang/easyui_xpp/jquery-easyui-136/jquery.min.js"></script>
+    <script src="/sdzb1_zhang/xppjs/jquery.idTabs.js"></script>
+    <script type="text/javascript" src="/sdzb1_zhang/easyui_xpp/jquery-easyui-136/locale/easyui-lang-zh_CN.js"></script>
+    <script type="text/javascript" src="/sdzb1_zhang/easyui_xpp/DataTables/datatables.js"></script>
     <link href="/sdzb1_zhang/js/bootstrap.min.css" rel="stylesheet">
     <script src="/sdzb1_zhang/js/bootstrap.min.js" type="text/javascript"></script>
     <script src="/sdzb1_zhang/HMcode_QD/HMjs/jump.js" type="text/javascript"></script>
+    <script src="/sdzb1_zhang/HMcode_QD/HMjs/echarts.min.js"></script>
     <script src="/sdzb1_zhang/HMcode_QD/HMjs/wow.min.js"></script>
     <link href="/sdzb1_zhang/HMcode_QD/HMcss/animate.min.css" rel="stylesheet">
     <link href="/sdzb1_zhang/HMcode_QD/HMcss/main.css" rel="stylesheet">
@@ -44,6 +48,89 @@
             });
 
         });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $.fn.dataTable.ext.errMode = 'none';
+            $('#table_id_ex1').DataTable( {
+                bAutoWidth:false,
+                "bLengthChange":false,
+                searching:false,
+                "paging": false,
+                info:false,
+                bSort:true,
+                language: {
+                    "sProcessing": "处理中...",
+                    "sLengthMenu": "显示 _MENU_ 项结果",
+                    "sZeroRecords": "没有匹配结果",
+                    "sInfo": "共 _TOTAL_ 项",
+                    "sInfoEmpty": "共 0 项",
+                    "sInfoFiltered": "(由 _MAX_ 项结果过滤)",
+                    "sInfoPostFix": "",
+                    "sSearch": "搜索:",
+                    "sUrl": "",
+                    "sEmptyTable": "表中数据为空",
+                    "sLoadingRecords": "载入中...",
+                    "sInfoThousands": ",",
+                    "oPaginate": {
+                        "sFirst": "首页",
+                        "sPrevious": "上页",
+                        "sNext": "下页",
+                        "sLast": "末页"
+                    },
+                    "oAria": {
+                        "sSortAscending": ": 以升序排列此列",
+                        "sSortDescending": ": 以降序排列此列"
+                    }
+                },//国际化语言结束
+                destroy:true,//表示可重复加载
+                "ajax": "/sdzb1_zhang/HMcode_QD/HMjs/table_id_ex1.json",
+                "columns": [
+                    { "data": "name" },
+                    { "data": "score" },
+                    { "data": "time" }
+                ]
+            } );
+            $('#table_id_ex2').DataTable( {
+                bAutoWidth:false,
+                "bLengthChange":false,
+                searching:false,
+                "paging": false,
+                info:false,
+                bSort:true,
+                language: {
+                    "sProcessing": "处理中...",
+                    "sLengthMenu": "显示 _MENU_ 项结果",
+                    "sZeroRecords": "没有匹配结果",
+                    "sInfo": "共 _TOTAL_ 项",
+                    "sInfoEmpty": "共 0 项",
+                    "sInfoFiltered": "(由 _MAX_ 项结果过滤)",
+                    "sInfoPostFix": "",
+                    "sSearch": "搜索:",
+                    "sUrl": "",
+                    "sEmptyTable": "表中数据为空",
+                    "sLoadingRecords": "载入中...",
+                    "sInfoThousands": ",",
+                    "oPaginate": {
+                        "sFirst": "首页",
+                        "sPrevious": "上页",
+                        "sNext": "下页",
+                        "sLast": "末页"
+                    },
+                    "oAria": {
+                        "sSortAscending": ": 以升序排列此列",
+                        "sSortDescending": ": 以降序排列此列"
+                    }
+                },//国际化语言结束
+                destroy:true,//表示可重复加载
+                "ajax": "/sdzb1_zhang/HMcode_QD/HMjs/table_id_ex2.json",
+                "columns": [
+                    { "data": "name" },
+                    { "data": "score" },
+                    { "data": "time" }
+                ]
+            } );
+        } );
     </script>
 </head>
 <body>
@@ -155,7 +242,7 @@
 </div>
 <!--E--课程介绍-->
 <!--S--国际备考-->
-<div class="animated inter-bk">
+<!--<div class="animated inter-bk">
     <h2>国际学校备考，一站式解决方案</h2>
     <ul class="bk-con">
         <li>根据学生情况<br>确定意向学校</li>
@@ -163,6 +250,13 @@
         <li>全程跟踪服务<br>确保成绩达标</li>
         <li>参加入学考试<br>正式就读学校</li>
     </ul>
+    <a class="link-m" href="#">+了解更多课程信息</a>
+</div>-->
+<!--E--国际备考-->
+<!--S--国际备考-->
+<div class="animated inter-bk">
+    <h2>国际学校备考，一站式解决方案</h2>
+    <div id="chartmain"></div>
     <a class="link-m" href="#">+了解更多课程信息</a>
 </div>
 <!--E--国际备考-->
@@ -216,71 +310,39 @@
         </ul>
         <div class="tab-all">
             <div class="tab-b" style="display: block">
-                <table border="1">
+                <table id="table_id_ex1">
+                    <thead>
                     <tr>
                         <th>优秀学员</th>
                         <th>学员战绩</th>
                         <th>学习时间</th>
                     </tr>
+                    </thead>
+                    <tfoot>
                     <tr>
-                        <td>王老师</td>
-                        <td>这里显示学员战绩</td>
-                        <td>三个月</td>
+                        <th>优秀学员</th>
+                        <th>学员战绩</th>
+                        <th>学习时间</th>
                     </tr>
-                    <tr>
-                        <td>王老师</td>
-                        <td>这里显示学员战绩</td>
-                        <td>三个月</td>
-                    </tr>
-                    <tr>
-                        <td>王老师</td>
-                        <td>这里显示学员战绩</td>
-                        <td>三个月</td>
-                    </tr>
-                    <tr>
-                        <td>王老师</td>
-                        <td>这里显示学员战绩</td>
-                        <td>三个月</td>
-                    </tr>
-                    <tr>
-                        <td>王老师</td>
-                        <td>这里显示学员战绩</td>
-                        <td>三个月</td>
-                    </tr>
+                    </tfoot>
                 </table>
             </div>
             <div class="tab-b">
-                <table border="1">
+                <table id="table_id_ex2">
+                    <thead>
                     <tr>
-                        <th>优秀学员1</th>
-                        <th>学员战绩1</th>
-                        <th>学习时间1</th>
+                        <th>优秀学员</th>
+                        <th>学员战绩</th>
+                        <th>学习时间</th>
                     </tr>
+                    </thead>
+                    <tfoot>
                     <tr>
-                        <td>王老师</td>
-                        <td>这里显示学员战绩</td>
-                        <td>三个月</td>
+                        <th>优秀学员</th>
+                        <th>学员战绩</th>
+                        <th>学习时间</th>
                     </tr>
-                    <tr>
-                        <td>王老师</td>
-                        <td>这里显示学员战绩</td>
-                        <td>三个月</td>
-                    </tr>
-                    <tr>
-                        <td>王老师</td>
-                        <td>这里显示学员战绩</td>
-                        <td>三个月</td>
-                    </tr>
-                    <tr>
-                        <td>王老师</td>
-                        <td>这里显示学员战绩</td>
-                        <td>三个月</td>
-                    </tr>
-                    <tr>
-                        <td>王老师</td>
-                        <td>这里显示学员战绩</td>
-                        <td>三个月</td>
-                    </tr>
+                    </tfoot>
                 </table>
             </div>
         </div>
@@ -349,12 +411,96 @@
                     $(this).siblings().find(".unfold").hide();
                     $(this).siblings().find(".fold").show();
             });
-        /*课堂简介图片抖动效果*/
-//        $(".online-txt li").hover(function(){
-//            $(this).find(".img-dd").addClass("add_transform");
-//        },function () {
-//            $(this).find(".img-dd").removeClass("add_transform");
-//        });
     });
+
+</script>
+<!--表格-->
+<script>
+    option = {
+        animation:true,
+        xAxis: {
+            type: 'category',
+            axisLine:{
+                show:false
+            },
+            axisTick:{
+                show:false
+            }
+        },
+        yAxis: {
+            type: 'value',
+            axisLine:{
+                show:false
+            },
+            axisLabel:{
+                show:false
+            },
+            splitLine:{
+                show:false
+            },
+            axisTick:{
+                show:false
+            }
+
+        },
+        series: [{
+            data: [25, 40, 30,40],
+            type: 'line',
+            symbol: 'circle',
+            symbolSize: 5,
+            lineStyle: {
+                normal: {
+                    color: 'green',//线条颜色
+                    width: 2
+                }
+            },
+            itemStyle: {
+                normal: {
+                    width:1,
+                    borderWidth: 2,
+                    borderColor: 'blue',
+                    color: 'white',
+                    opacity:0.6
+                }
+            },
+            markPoint:{
+                symbolSize:'60',
+                label:{
+                    color:'green',//文字标注
+                    position:'inside',
+                    fontSize:14
+                },
+                itemStyle:{
+                    color:'yellow',//圆圈标注
+                    borderWidth:"0",
+                    shadow:'none'
+                },
+                data:[
+                    {
+                        value: "这里是我的第一段文字",
+                        x:160,
+                        y:170
+                    }, {
+                        value:"这里是测试文字",
+                        x:320,
+                        y:50
+                    }, {
+                        value:"这里是测试文字",
+                        x:480,
+                        y:130
+                    }, {
+                        value:"这里是测试文字",
+                        x:640,
+                        y:50
+                    }
+                ]
+            }
+        }]
+    };
+
+    var myChart = echarts.init(document.getElementById('chartmain'));
+    //使用制定的配置项和数据显示图表
+    myChart.setOption(option);
+
 
 </script>

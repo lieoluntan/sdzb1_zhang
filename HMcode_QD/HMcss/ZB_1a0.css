@@ -1,6 +1,6 @@
-html::-webkit-scrollbar {
-    display: none;
-}
+/*html::-webkit-scrollbar {*/
+    /*display: none;*/
+/*}*/
 /*轮播*/
 .carousel-control.right ,.carousel-control.left{
     background: none;
