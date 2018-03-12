@@ -10,7 +10,8 @@
     <link href="/sdzb1_zhang/js/bootstrap.min.css" rel="stylesheet">
     <script src="/sdzb1_zhang/js/bootstrap.min.js" type="text/javascript"></script>
     <script src="/sdzb1_zhang/HMcode_QD/HMjs/jump.js" type="text/javascript"></script>
-    <script src="/sdzb1_zhang/HMcode_QD/HMjs/echarts.min.js"></script>
+    <script src="/sdzb1_zhang/HMcode_QD/HMjs/d3.v3.min.js"></script>
+    <script src="/sdzb1_zhang/HMcode_QD/HMjs/index.js"></script>
     <script src="/sdzb1_zhang/HMcode_QD/HMjs/wow.min.js"></script>
     <link href="/sdzb1_zhang/HMcode_QD/HMcss/animate.min.css" rel="stylesheet">
     <link href="/sdzb1_zhang/HMcode_QD/HMcss/main.css" rel="stylesheet">
@@ -135,7 +136,7 @@
 </head>
 <body>
 <!--S--轮播-->
-<div id="myCarousel" class="animated fadeInUp carousel slide">
+<div id="myCarousel" class="First_Carousel_area animated fadeInUp carousel slide">
     <a href="#" class="btn-zx">立即咨询</a>
     <!-- 轮播（Carousel）指标 -->
     <ol class="carousel-indicators">
@@ -146,13 +147,13 @@
     <!-- 轮播（Carousel）项目 -->
     <div class="carousel-inner">
         <div class="item active">
-            <img style="max-width:100%;min-width:100%;" src="/sdzb1_zhang/sdzbjpg/slide01.jpg" alt="First slide">
+            <img style="max-width:100%;min-width:100%;" src="/sdzb1_zhang/sdzbjpg/slide01.png" alt="First slide">
         </div>
         <div class="item">
-            <img style="max-width:100%;min-width:100%;" src="/sdzb1_zhang/sdzbjpg/slide02.jpg" alt="Second slide">
+            <img style="max-width:100%;min-width:100%;" src="/sdzb1_zhang/sdzbjpg/slide02.png" alt="Second slide">
         </div>
         <div class="item">
-            <img style="max-width:100%;min-width:100%;" src="/sdzb1_zhang/sdzbjpg/slide03.jpg" alt="Third slide">
+            <img style="max-width:100%;min-width:100%;" src="/sdzb1_zhang/sdzbjpg/slide03.png" alt="Third slide">
         </div>
     </div>
     <!-- 轮播（Carousel）导航 -->
@@ -161,10 +162,10 @@
 </div>
 <!--E--轮播-->
 <!--S--在线课堂简介-->
-<div class="animated online">
-    <h2>树袋在线课堂</h2>
-    <p>— 释放效率  高效学习 —</p>
-    <div class="online-main img_box">
+<div class="Second_inLine_area animated online">
+    <h2 class="tit">树袋在线课堂</h2>
+    <p class="tit-fu">顶尖的师资力量，有值得授课内容，专业的课程服务</p>
+    <!--<div class="online-main img_box">
         <ul class="online-txt" id="ul">
             <li class="fir">
                 <img class="img-dd" src="/sdzb1_zhang/HMcode_QD/HMimages/img-bq.png">
@@ -175,18 +176,83 @@
                 <p>这里是文字效果展示</p>
             </li>
         </ul>
+    </div>-->
+    <div class="online-box">
+        <div class="online_l">
+            <img src="/sdzb1_zhang/HMcode_QD/HMimages/icon-conputer.png">
+            <h4>随时随地，灵活上课</h4>
+            <ul class="txt">
+                <li>打破时间地域限制，释放效率，高效学习</li>
+                <li>在线授课，极简操作，做到实时交流互动</li>
+                <li>课程全录制，课后可随时温习巩固</li>
+            </ul>
+        </div>
+        <div class="online_c">
+            <img src="/sdzb1_zhang/HMcode_QD/HMimages/icon-book.png">
+            <h4>课程个性化定制</h4>
+            <ul class="txt">
+                <li>全面了解学生学习情况，匹配合适的老师</li>
+                <li>多维度分析诊断，定制个性化的学习方案</li>
+                <li>实时动态监测，针对性地调整学习规划</li>
+            </ul>
+        </div>
+        <div class="online_r">
+            <img src="/sdzb1_zhang/HMcode_QD/HMimages/icon-jqr.png">
+            <h4>学习顾问“管家式”服务</h4>
+            <ul class="txt">
+                <li>随时监测上课情况，定期发送学习报告</li>
+                <li>课后及时反馈，家长第一时间了解学习动态</li>
+                <li>监督学生作业完成情况，即使答疑解惑</li>
+            </ul>
+        </div>
     </div>
+    <a href="#" class="line-link">+详细了解树袋在线课堂</a>
 </div>
 <!--E--在线课堂简介-->
 <!--S--预约试听-->
-<div class="animated appoint">
-    这里是在线试听部分的步骤
+<div class="three_appoint_area animated appoint">
+    <h2 class="tit">一键预约，在线轻松上课</h2>
+    <div class="appoint-con">
+        <ul class="img-xz">
+            <b></b>
+            <b></b>
+            <b></b>
+            <li>
+                <img src="/sdzb1_zhang/HMcode_QD/HMimages/icon-yy1.png">
+            </li>
+            <b></b>
+            <b></b>
+            <b></b>
+            <b></b>
+            <b></b>
+            <li>
+                <img src="/sdzb1_zhang/HMcode_QD/HMimages/icon-yy2.png">
+            </li>
+            <b></b>
+            <b></b>
+            <b></b>
+            <b></b>
+            <b></b>
+            <li>
+                <img src="/sdzb1_zhang/HMcode_QD/HMimages/icon-yy3.png">
+            </li>
+            <b></b>
+            <b></b>
+            <b></b>
+        </ul>
+        <ul class="txt-xz">
+            <li>线上预约免费试听</li>
+            <li>专业课程顾问致电排课安排</li>
+            <li>注册账号开启学习之旅</li>
+        </ul>
+    </div>
+    <a href="#" class="link-yy">预约免费试听</a>
 </div>
 <!--E--预约试听-->
 <!--S--课程介绍-->
-<div class="animated course-box">
-    <h2>国际k12课程体系全覆盖</h2>
-    <p>— 个性化定制 精准提高 定向突破 —</p>
+<div class="four_course_area animated course-box">
+    <h2 class="tit">国际k12课程体系全覆盖</h2>
+    <p class="tit-fu">基础巩固&nbsp;&nbsp;&nbsp;查漏补缺&nbsp;&nbsp;&nbsp;培优拔高&nbsp;&nbsp;&nbsp;高分冲刺</p>
     <div class="tab-con">
         <ul class="tab-tit">
             <li class="cur">IGCSE</li>
@@ -197,7 +263,59 @@
         </ul>
         <div class="tab-main">
             <div class="tab-item" style="display: block">
-                <p>“这里是课程简介IGCSE”</p>
+                <div class="box-tw">
+                    <img class="img-b">
+                    <div class="txt-b">
+                        <b class="yh-up">“</b>
+                        <p>IGCSE(International General Certificate of Secondary Education)为英国普通初级中学毕业文凭的全球考试系统，其证书在大部分地区被认可。不用于中国教育制度，IGCSE是英国中学10年级和11年级的课程。</p>
+                        <b class="yh-down">”</b>
+                    </div>
+                </div>
+                <ul class="item-m">
+                    <li><b>辅助学科：</b>学科一  学科二  学科三</li>
+                    <li><b>课程特点：</b>特点一  特点二  特点三</li>
+                    <li><b>适合学生：</b>学生一  学生二  学生三</li>
+                </ul>
+            </div>
+            <div class="tab-item">
+                <div class="box-tw">
+                    <img class="img-b">
+                    <div class="txt-b">
+                        <b class="yh-up">“</b>
+                        <p>2IGCSE(International General Certificate of Secondary Education)为英国普通初级中学毕业文凭的全球考试系统，其证书在大部分地区被认可。不用于中国教育制度，IGCSE是英国中学10年级和11年级的课程。</p>
+                        <b class="yh-down">”</b>
+                    </div>
+                </div>
+                <ul class="item-m">
+                    <li><b>辅助学科：</b>学科一  学科二  学科三</li>
+                    <li><b>课程特点：</b>特点一  特点二  特点三</li>
+                    <li><b>适合学生：</b>学生一  学生二  学生三</li>
+                </ul>
+            </div>
+            <div class="tab-item">
+                <div class="box-tw">
+                    <img class="img-b">
+                    <div class="txt-b">
+                        <b class="yh-up">“</b>
+                        <p>3IGCSE(International General Certificate of Secondary Education)为英国普通初级中学毕业文凭的全球考试系统，其证书在大部分地区被认可。不用于中国教育制度，IGCSE是英国中学10年级和11年级的课程。</p>
+                        <b class="yh-down">”</b>
+                    </div>
+                </div>
+                <ul class="item-m">
+                    <li><b>辅助学科：</b>学科一  学科二  学科三</li>
+                    <li><b>课程特点：</b>特点一  特点二  特点三</li>
+                    <li><b></b>适合学生：学生一  学生二  学生三</li>
+                </ul>
+            </div>
+            <div class="tab-item">
+                <div class="box-tw">
+                    <img class="img-b">
+                    <div class="txt-b">
+                        <b class="yh-up">“</b>
+                        <p>4IGCSE(International General Certificate of Secondary Education)为英国普通初级中学毕业文凭的全球考试系统，其证书在大部分地区被认可。不用于中国教育制度，IGCSE是英国中学10年级和11年级的课程。</p>
+                        <b class="yh-down">”</b>
+                    </div>
+                </div>
                 <ul class="item-m">
                     <li>辅助学科：学科一  学科二  学科三</li>
                     <li>课程特点：特点一  特点二  特点三</li>
@@ -205,31 +323,14 @@
                 </ul>
             </div>
             <div class="tab-item">
-                <p>“这里是课程简介A-Level”</p>
-                <ul class="item-m">
-                    <li>辅助学科：学科一  学科二  学科三</li>
-                    <li>课程特点：特点一  特点二  特点三</li>
-                    <li>适合学生：学生一  学生二  学生三</li>
-                </ul>
-            </div>
-            <div class="tab-item">
-                <p>“这里是课程简介IB”</p>
-                <ul class="item-m">
-                    <li>辅助学科：学科一  学科二  学科三</li>
-                    <li>课程特点：特点一  特点二  特点三</li>
-                    <li>适合学生：学生一  学生二  学生三</li>
-                </ul>
-            </div>
-            <div class="tab-item">
-                <p>“这里是课程简介Ap”</p>
-                <ul class="item-m">
-                    <li>辅助学科：学科一  学科二  学科三</li>
-                    <li>课程特点：特点一  特点二  特点三</li>
-                    <li>适合学生：学生一  学生二  学生三</li>
-                </ul>
-            </div>
-            <div class="tab-item">
-                <p>“这里是课程简介美高”</p>
+                <div class="box-tw">
+                    <img class="img-b">
+                    <div class="txt-b">
+                        <b class="yh-up">“</b>
+                        <p>IGCSE(International General Certificate of Secondary Education)为英国普通初级中学毕业文凭的全球考试系统，其证书在大部分地区被认可。不用于中国教育制度，IGCSE是英国中学10年级和11年级的课程。</p>
+                        <b class="yh-down">”</b>
+                    </div>
+                </div>
                 <ul class="item-m">
                     <li>辅助学科：学科一  学科二  学科三</li>
                     <li>课程特点：特点一  特点二  特点三</li>
@@ -242,21 +343,24 @@
 </div>
 <!--E--课程介绍-->
 <!--S--国际备考-->
-<!--<div class="animated inter-bk">
-    <h2>国际学校备考，一站式解决方案</h2>
-    <ul class="bk-con">
-        <li>根据学生情况<br>确定意向学校</li>
-        <li>参加备考课程<br>定制课程规划</li>
-        <li>全程跟踪服务<br>确保成绩达标</li>
-        <li>参加入学考试<br>正式就读学校</li>
-    </ul>
-    <a class="link-m" href="#">+了解更多课程信息</a>
-</div>-->
-<!--E--国际备考-->
-<!--S--国际备考-->
 <div class="animated inter-bk">
     <h2>国际学校备考，一站式解决方案</h2>
-    <div id="chartmain"></div>
+    <div class="charts--container">
+        <ul>
+            <li class="chart">
+                <div id="lineChart">
+                    <svg id="lineChartSVG" class="lineChart--svg">
+                        <defs>
+                            <linearGradient id="lineChart--gradientBackgroundArea" x1="0" x2="0" y1="0" y2="1">
+                                <stop class="lineChart--gradientBackgroundArea--top" offset="0%" />
+                                <stop class="lineChart--gradientBackgroundArea--bottom" offset="100%" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+            </li>
+        </ul>
+    </div>
     <a class="link-m" href="#">+了解更多课程信息</a>
 </div>
 <!--E--国际备考-->
@@ -412,95 +516,5 @@
                     $(this).siblings().find(".fold").show();
             });
     });
-
-</script>
-<!--表格-->
-<script>
-    option = {
-        animation:true,
-        xAxis: {
-            type: 'category',
-            axisLine:{
-                show:false
-            },
-            axisTick:{
-                show:false
-            }
-        },
-        yAxis: {
-            type: 'value',
-            axisLine:{
-                show:false
-            },
-            axisLabel:{
-                show:false
-            },
-            splitLine:{
-                show:false
-            },
-            axisTick:{
-                show:false
-            }
-
-        },
-        series: [{
-            data: [25, 40, 30,40],
-            type: 'line',
-            symbol: 'circle',
-            symbolSize: 5,
-            lineStyle: {
-                normal: {
-                    color: 'green',//线条颜色
-                    width: 2
-                }
-            },
-            itemStyle: {
-                normal: {
-                    width:1,
-                    borderWidth: 2,
-                    borderColor: 'blue',
-                    color: 'white',
-                    opacity:0.6
-                }
-            },
-            markPoint:{
-                symbolSize:'60',
-                label:{
-                    color:'green',//文字标注
-                    position:'inside',
-                    fontSize:14
-                },
-                itemStyle:{
-                    color:'yellow',//圆圈标注
-                    borderWidth:"0",
-                    shadow:'none'
-                },
-                data:[
-                    {
-                        value: "这里是我的第一段文字",
-                        x:160,
-                        y:170
-                    }, {
-                        value:"这里是测试文字",
-                        x:320,
-                        y:50
-                    }, {
-                        value:"这里是测试文字",
-                        x:480,
-                        y:130
-                    }, {
-                        value:"这里是测试文字",
-                        x:640,
-                        y:50
-                    }
-                ]
-            }
-        }]
-    };
-
-    var myChart = echarts.init(document.getElementById('chartmain'));
-    //使用制定的配置项和数据显示图表
-    myChart.setOption(option);
-
 
 </script>
