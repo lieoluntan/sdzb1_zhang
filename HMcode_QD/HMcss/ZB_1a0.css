@@ -262,7 +262,7 @@
 }
 .tab-tit li{
     display: inline-block;
-    margin:0 15px;
+    margin:0 30px;
     padding-bottom: 10px;
     font-size:28px;
     color:#000;
@@ -276,17 +276,58 @@
 .tab-main .tab-item{
     display:none;
 }
+.tab-item .item-m{
+    display: block;
+    width:980px;
+    color:#333;
+    margin-left:40px;
+    margin-top: 30px;
+
+}
+.tab-item .item-m li{
+    overflow: hidden;
+}
+.tab-item .item-m b{
+    letter-spacing: 0;
+    font-size:20px;
+    padding-right: 14px;
+    display: block;
+    float: left;
+}
+.tab-item .item-m p{
+    display: block;
+    float: left;
+    font-size:17px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    width: 850px;
+    margin:0;
+}
 .tab-main .tab-item li{
     display: block;
+    margin-bottom: 31px;
+}
+.tab-item  .item-m i{
+    font-style: normal;
+    font-size:16px;
+    color:white;
+    display: inline-block;
+    background-color: #333;
+    margin-right:20px;
+    line-height: 25px;
+    padding:0 6px;
+    border-radius: 6px;
 }
 .course-box .link-m{
-    font-size:14px;
+    font-size:16px;
     display: block;
-    padding:10px;
-    border:1px solid #ccc;
-    width:400px;
+    line-height: 40px;
+    border:1px solid #8c8c8c;
+    width:285px;
+    color:#8c8c8c;
     text-align: center;
-    margin:0 auto;
+    margin:20px auto 45px;
+    border-radius: 4px;
 }
 /*国际课程板块*/
 .inter-bk{
